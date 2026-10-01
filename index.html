@@ -119,12 +119,16 @@ input[type=date]{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:10px;
           <input type="number" id="inp-amount" placeholder="0" min="0" inputmode="decimal">
         </div>
         <select id="inp-cat">
-          <option value="Food">🍽 Food</option>
-          <option value="Transport">🛵 Transport</option>
-          <option value="Shopping">🛍 Shopping</option>
+          <option value="Breakfast">🍳 Breakfast</option>
+          <option value="Lunch">🍽 Lunch</option>
+          <option value="Snacks">🥤 Snacks</option>
+          <option value="Groceries">🛒 Groceries</option>
+          <option value="Petrol">⛽ Petrol</option>
+          <option value="Train">🚆 Train</option>
+          <option value="Travel">🛵 Travel</option>
           <option value="Entertainment">🎬 Entertainment</option>
-          <option value="Utilities">💡 Utilities</option>
           <option value="Health">💊 Health</option>
+          <option value="Shopping">🛍 Shopping</option>
           <option value="Other">📌 Other</option>
         </select>
       </div>
@@ -198,8 +202,8 @@ input[type=date]{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:10px;
 const EXP_KEY='gopi_exp_v2';
 const BUD_KEY='gopi_budget_v2';
 
-const CAT_COLORS={Food:'#f97316',Transport:'#3b82f6',Shopping:'#a855f7',Entertainment:'#ec4899',Utilities:'#eab308',Health:'#22c55e',Other:'#6b7280'};
-const CAT_ICONS={Food:'🍽',Transport:'🛵',Shopping:'🛍',Entertainment:'🎬',Utilities:'💡',Health:'💊',Other:'📌'};
+const CAT_COLORS={Breakfast:'#f97316',Lunch:'#fb923c',Snacks:'#fbbf24',Groceries:'#a3e635',Petrol:'#3b82f6',Train:'#6366f1',Travel:'#8b5cf6',Entertainment:'#ec4899',Health:'#22c55e',Shopping:'#a855f7',Other:'#6b7280'};
+const CAT_ICONS={Breakfast:'🍳',Lunch:'🍽',Snacks:'🥤',Groceries:'🛒',Petrol:'⛽',Train:'🚆',Travel:'🛵',Entertainment:'🎬',Health:'💊',Shopping:'🛍',Other:'📌'};
 
 const BUD_DEFAULTS={
   income:[{id:1,name:'Salary',amt:110464}],
@@ -226,16 +230,13 @@ const BUD_DEFAULTS={
   variable:[
     {id:20,name:'Breakfast',amt:1800},
     {id:21,name:'Lunch',amt:7500},
-    {id:22,name:'Eggs',amt:900},
-    {id:23,name:'Banana',amt:300},
-    {id:24,name:'Diet Coke',amt:1200},
-    {id:25,name:'Dry Fruits',amt:2500},
-    {id:26,name:'Snacks',amt:1500},
-    {id:27,name:'Petrol',amt:2000},
-    {id:28,name:'Train Tickets',amt:2000},
-    {id:29,name:'Additional Travel',amt:3000},
-    {id:30,name:'Head Massage',amt:1000},
-    {id:31,name:'Hair Cut',amt:400}
+    {id:22,name:'Snacks',amt:5200},
+    {id:23,name:'Groceries',amt:1200},
+    {id:24,name:'Petrol',amt:2000},
+    {id:25,name:'Train',amt:2000},
+    {id:26,name:'Travel',amt:3000},
+    {id:27,name:'Entertainment',amt:1000},
+    {id:28,name:'Health',amt:1400}
   ]
 };
 
